@@ -1,16 +1,19 @@
 'use client'
+// import dynamic from "next/dynamic";
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie";
+import animationData from '@/data/confetti.json'
 
 import { cn } from "@/lib/utils";
 
 import { BackgroundGradientAnimation } from "./GradienteBG";
 import { GlobeDemo } from "./GridGlobe";
 
-import animationData from '@/data/confetti.json'
-import MagicButton from "./MagicButton";
+import MagicButton from "../MagicButton";
+
+import copy from "copy-to-clipboard";
 
 export const BentoGrid = ({
     className,
@@ -53,27 +56,24 @@ export const BentoGridItem = ({
     titleClassName?: string;
     spareImg?: string;
 }) => {
-    const leftLists = ['ServiceNow', 'JavaScript', 'Angular.js']
+    const leftLists = ['JavaScript', 'ServiceNow', 'Angular.js']
     const rightLists = ['React.js', 'Next.js', 'TypeScript']
 
 
     const [copied, setCopied] = useState(false);
 
-    const defaultOptions = {
-        loop: copied,
-        autoplay: copied,
-        animationData: animationData,
-        rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice",
-        },
-    };
+    // const defaultOptions = {
+    //     loop: copied,
+    //     autoplay: copied,
+    //     animationData: animationData,
+    //     rendererSettings: {
+    //     preserveAspectRatio: "xMidYMid slice",
+    //     },
+    // };
 
     const handleCopy = () => {
-        if (typeof document !== 'undefined') {
-            const text = "matheusoliveira.jmml@gmail.com";
-            navigator.clipboard.writeText(text);
-            setCopied(true);
-        }
+        copy("matheusoliveira.jmml@gmail.com");
+        setCopied(true);
     };
     return (
         <div
@@ -125,9 +125,9 @@ export const BentoGridItem = ({
 
                     {id === 2 && <GlobeDemo />}
                     {id === 3 && (
-                        <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+                        <div className="flex gap-1 sm:gap-1 md:gap-2 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
                             {/* tech stack lists */}
-                            <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+                            <div className="flex flex-col gap-3 lg:gap-6 xl:gap-8">
                                 {leftLists.map((item, i) => (
                                     <span
                                         key={i}
@@ -139,7 +139,7 @@ export const BentoGridItem = ({
                                 ))}
                                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
                             </div>
-                            <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+                            <div className="flex flex-col gap-3 lg:gap-6 xl:gap-8">
                                 <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]"></span>
                                 {rightLists.map((item, i) => (
                                     <span
@@ -156,21 +156,20 @@ export const BentoGridItem = ({
                     {id === 6 && (
                         <div className="mt-5 relative">
                             <div className={`absolute -bottom-5 right-0`}>
-                                <Lottie options={{
+                                {/* <Lottie options={{
                                     loop: copied,
                                     autoplay: copied,
                                     animationData,
                                     rendererSettings: {
                                         preserveAspectRatio: 'xMidYMid slice'
                                     }
-                                }}   
-                                />
+                                }}/> */}
                             </div>
                             <MagicButton 
                                 title={copied ? 'Email copied' : 'Copy my email'}
                                 icon={<IoCopyOutline />}
                                 position="left"
-                                otherClasses={`!bg-[#161a31]`}
+                                otherClasses={`!bg-[#161a31] gap-2`}
                                 handleClick={handleCopy}
                             />
                         </div>

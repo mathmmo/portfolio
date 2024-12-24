@@ -1,6 +1,8 @@
-import { section } from 'framer-motion/client'
 import React from 'react'
 import { BentoGrid, BentoGridItem } from './ui/BentoGrid'
+// import dynamic from "next/dynamic";
+// const BentoGrid = dynamic(() => import("./ui/BentoGrid").then((mod) => mod.BentoGrid), { ssr: false });
+// const BentoGridItem = dynamic(() => import("./ui/BentoGrid").then((mod) => mod.BentoGridItem), { ssr: false });
 import { gridItems } from '@/data'
 
 const Grid = () => {
