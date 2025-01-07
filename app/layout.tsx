@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import Footer from "@/components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,6 +38,9 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <footer className="w-full border-t py-8 mt-10">
+          <Footer />
+        </footer>
       </body>
     </html>
   );
