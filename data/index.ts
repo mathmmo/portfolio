@@ -8,7 +8,7 @@ export const navItems = [
 export const gridItems = [
     {
         id: 1,
-        title: "I prioritize client collaboration, fostering open communication ",
+        title: "Prioritizing client collaboration, fostering open communication ",
         description: "",
         className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
         imgClassName: "w-full h-full opacity-30",
@@ -18,7 +18,7 @@ export const gridItems = [
     },
     {
         id: 2,
-        title: "I'm very flexible with time zone communications",
+        title: "Very flexible with time zone communications",
         description: "",
         className: "lg:col-span-2 md:col-span-3 md:row-span-2",
         imgClassName: "",
@@ -28,7 +28,7 @@ export const gridItems = [
     },
     {
         id: 3,
-        title: "My tech stack",
+        title: "Tech stack",
         description: "I constantly try to improve",
         className: "lg:col-span-2 md:col-span-3 md:row-span-2",
         imgClassName: "",
@@ -49,7 +49,7 @@ export const gridItems = [
 
     {
         id: 5,
-        title: "Currently building a AngularJS/ServiceNow WebComponent Library for Employee Center.",
+        title: "Building a AngularJS/ServiceNow WebComponent Library for Employee Center.",
         description: "What's next?",
         className: "md:col-span-3 md:row-span-2",
         imgClassName: "absolute right-0 bottom-0 lg:bottom-36 md:w-96 w-60",
@@ -92,25 +92,25 @@ export const approach = [
     {
         id: 1,
         title: "Strategic Project Design",
-        content: "As a technical leader, I ensure that every project is meticulously documented, architected, and developed according to best practices and standards. My approach is 'by the book' to deliver sustainable and reliable solutions.",
+        content: "Every project is meticulously documented, architected, and developed according to best practices and standards. A 'by the book' approach delivers sustainable and reliable solutions.",
         thumbnail: "/book-icon.png",
     },
     {
         id: 2,
         title: "Bridge Between Two Worlds",
-        content: "I excel in translating business processes into technical specifications. Acting as the bridge between clients and the development team, I ensure seamless communication to align business goals with technical execution.",
+        content: "Translating business processes into technical specifications. Acting as the bridge between clients and the development team to ensure seamless communication to align business goals with technical execution.",
         thumbnail: "/leader-icon.png",
     },
     {
         id: 3,
         title: "Hands-On Development",
-        content: "I am a highly skilled developer who thrives on tackling complex challenges, integrating systems, and writing clean, efficient code. I take pride in actively contributing to the technical execution of projects.",
+        content: "Highly skilled developer who thrives on tackling complex challenges, integrating systems, and writing clean, efficient code. Pride in actively contributing to the technical execution of projects.",
         thumbnail: "/notebook-icon.png",
     },
     {
         id: 4,
         title: "Delivering Excellence",
-        content: "I am committed to delivering exceptional value to my clients by implementing top-notch solutions. My goal is to exceed expectations and ensure the highest standards of quality in every project.",
+        content: "Deliver exceptional value to clients by implementing top-notch solutions. The ultimate goal is to exceed expectations and ensure the highest standards of quality in every project.",
         thumbnail: "/trophy-icon.png",
     },
 ];

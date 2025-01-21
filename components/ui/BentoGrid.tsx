@@ -159,7 +159,7 @@ export const BentoGridItem = ({
                                 <Lottie options={defaultOptions}/>
                             </div>
                             <MagicButton 
-                                title={copied ? 'Email copied' : 'Copy my email'}
+                                title={copied ? 'Email copied' : 'Hit me up'}
                                 icon={<IoCopyOutline />}
                                 position="left"
                                 otherClasses={`!bg-[#161a31] gap-2`}

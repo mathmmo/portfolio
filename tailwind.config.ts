@@ -26,6 +26,12 @@ const config = {
   		}
   	},
   	extend: {
+		dropShadow: {
+			glow: [
+			  "0 0px 20px rgba(255,255, 255, 0.35)",
+			  "0 0px 65px rgba(255, 255,255, 0.2)"
+			]
+		},
   		colors: {
   			black: {
   				'100': '#000319',
@@ -89,6 +95,9 @@ const config = {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		keyframes: {
+			'shine': {
+				"100%": { left: "125%" },
+			},
   			'accordion-down': {
   				from: {
   					height: '0'
@@ -172,7 +181,8 @@ const config = {
   			third: 'moveInCircle 40s linear infinite',
   			fourth: 'moveHorizontal 40s ease infinite',
   			fifth: 'moveInCircle 20s ease infinite',
-  			scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite'
+  			scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
+			shine: "shine 1s",
   		}
   	}
   },

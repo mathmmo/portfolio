@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 import Footer from "@/components/Footer";
+import Social from "@/components/ui/social";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,15 +31,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
-        <footer className="w-full border-t py-8 mt-10">
+        <Social />
+        {children}
+        <footer className="w-full border-t py-8 mt-10 bg-black-100">
           <Footer />
         </footer>
       </body>

@@ -16,20 +16,19 @@ const Hero = () => {
             <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
             </div>
-            <div className='flex justify-center relative my-20 z-10'>
-                <div className='max-w-[89vw] md:max-w-6xl lg:max-2-[60vw] flex flex-col items-center justify-center'>
-                    <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>Math&apos;s Portfolio</h2>
+            <div className='flex justify-left relative my-20 z-10'>
+                <div className='max-w-[89vw] md:max-w-6xl lg:max-2-[60vw] flex flex-col items-left justify-left'>
                     <TextGenerateEffect
-                        className="text-center text-[40px] md:text-5xl lg:text-6xl mb-4"
+                        className="text-left text-[40px] md:text-5xl lg:text-6xl mb-4"
                         words='Hi, I&apos;m Matheus'
                     />
-                    <p className='text-center md:tracking-wider mb-16 text-md md:text-lg lg:text-2xl'>
-                        Brazilian ServiceNow Developer for 6 years who enjoy&apos;s everything related to JavaScript (Node, Angular, React and Next.js).
+                    <p className='text-left md:tracking-wider mb-16 text-md md:text-lg lg:text-2xl'>
+                    A Brazilian full-stack developer with 6 years of experience and a serious passion for all things tech. I thrive on building innovative solutions, specializing in ServiceNow and JavaScript frameworks. Let&apos;s turn ideas into reality!
                     </p>
                     <a href="#about">
                         <MagicButton
                             title="About me"
-                            icon={<FaLocationArrow />}
+                            icon=""
                             position='right'
                             otherClasses='gap-2'
                         />

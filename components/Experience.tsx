@@ -1,9 +1,9 @@
 import React from 'react'
-import { Timeline } from './ui/timeline'
+import { Timeline } from './ui/Timeline'
 import { LuMedal } from "react-icons/lu";
 
 const Experience = () => {
-  const test = [
+  const exp = [
     {
       title: "2021 - 2025",
       content: (
@@ -40,7 +40,7 @@ const Experience = () => {
               <li>Connected with clients to identify needs and provide helpful solutions.</li>
             </ul>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          {/* <div className="grid grid-cols-2 gap-4">
             <img
               src="https://assets.aceternity.com/templates/startup-4.webp"
               alt="startup template"
@@ -48,7 +48,7 @@ const Experience = () => {
               height={500}
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             />
-          </div>
+          </div> */}
         </div>
       ),
     },
@@ -84,12 +84,7 @@ const Experience = () => {
       content: (
         <div>
           <div className='flex items-center justify-start gap-4 pb-8'>
-            {/* <svg xmlns="http://www.w3.org/2000/svg"  version="1.2" baseProfile="tiny-ps" viewBox="0 0 1649 1740" width="60" height="64">
-              <title>Accenture-svg</title>
-              <g id="Layer">
-                <path id="Layer" fill='#A100FF' d="M0.25 1228L962.68 869.83L0.25 501.43L0.25 0L1648.67 665.17L1648.67 1074.5L0.25 1739.66L0.25 1228Z"/>
-              </g>
-            </svg> */}
+            <LuMedal size={60} />
             <p className='text-lg md:text-4xl font-bold'>Alpar Service - Technical Consultant</p>
           </div>
           <div className='pb-4'>
@@ -110,18 +105,7 @@ const Experience = () => {
       content: (
         <div>
           <div className='flex items-center justify-start gap-4 pb-8'>
-            <div
-              style={{
-                backgroundImage: "url('https://www.innovareti.com.br/images/logo_innovare_home_site_white.png')",
-                width: "88px",
-                height: "100px",
-                backgroundPosition: "left",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-              }}
-            >
-              &nbsp;
-            </div>
+            <img src="./innovare.svg" alt="Innovare" className='w-[100px] h-[100px]' />
             <p className='text-lg md:text-4xl font-bold'>InnovareIT - Jr Developer</p>
           </div>
           <div className='pb-4'>
@@ -134,15 +118,13 @@ const Experience = () => {
     },
   ];
 
-
-
   return (
     <div className='py-20' id='experience'>
         <h1 className='heading'>
-            My {' '}
-            <span className='text-[#a784f9]'>work experience</span>
+          A career built with {' '}
+            <span className='text-[#a784f9]'>passion</span>
         </h1>
-        <Timeline data={test} />
+        <Timeline data={exp} />
     </div>
   )
 }

@@ -10,8 +10,9 @@ const RecentProjects = () => {
   return (
     <div className='pb-20' id='projects'>
         <h1 className='heading'>
-            A small selection of {' '}
-            <span className='text-[#a784f9]'>recent projects</span>
+            Made with 💜
+            {/* A small selection of {' '}
+            <span className='text-[#a784f9]'>recent projects</span> */}
         </h1>
         <div className='flex flex-wrap items-center justify-center gap-x-24 gap-y-8 pt-4 mt-8'>
             {projects.map(({id, title, des, img, iconLists, link}) => (
@@ -28,7 +29,7 @@ const RecentProjects = () => {
                                 <CardItem
                                     translateZ={100}
                                     // rotateX={40}
-                                    rotateZ={-5}
+                                    // rotateZ={-5}
                                     className="w-full mt-4"
                                     >
                                     <Image
